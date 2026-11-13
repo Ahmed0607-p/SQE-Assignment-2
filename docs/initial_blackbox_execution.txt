@@ -1,0 +1,11 @@
+Baseline black-box execution
+
+Command:
+python -m pytest tests/test_blackbox.py -v --cov=registration --cov-branch --cov-report=term-missing
+
+Result:
+48 tests collected
+35 passed
+13 failed
+
+The failed tests show where the supplied program does not match the requirements. The original registration.py was not changed.
