@@ -1,0 +1,16 @@
+Final combined test execution
+
+Command:
+python -m pytest tests/ --cov=registration --cov-branch --cov-report=term-missing
+
+Result:
+54 tests collected
+41 passed
+13 failed
+
+Coverage:
+56 of 57 statements = 98.2%
+25 of 26 branch arcs = 96.2%
+Combined pytest-cov total = 98%
+
+The 13 failures remain as evidence of the defects found in the supplied program. The original registration.py was not changed.
