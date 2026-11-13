@@ -1,11 +1,15 @@
 Baseline black-box execution
 
 Command:
-python -m pytest tests/test_blackbox.py -v --cov=registration --cov-branch --cov-report=term-missing
+python -m pytest tests/test_blackbox.py --cov=registration --cov-branch --cov-report=term-missing -q
 
 Result:
-48 tests collected
-35 passed
+50 tests collected
+37 passed
 13 failed
+
+Coverage:
+53 of 57 statements covered = 93.0%
+21 of 26 branch arcs covered = 80.8%
 
 The failed tests show where the supplied program does not match the requirements. The original registration.py was not changed.
