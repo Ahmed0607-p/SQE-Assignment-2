@@ -1,0 +1,10 @@
+Patch validation was performed in a temporary copy of the project, not in the submitted baseline folder.
+The proposed_defect_fixes.patch was applied only to /tmp/SQE-fixed-check/registration.py.
+
+Command:
+python -m pytest tests/ -q
+
+Result:
+54 passed in 0.30s
+
+The original registration.py in this submission remains unchanged. This temporary regression run indicates the proposed corrections satisfy the current 54 black-box/white-box tests; it is not a GitHub Actions run or a merged pull request.
