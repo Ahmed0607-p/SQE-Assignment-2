@@ -83,8 +83,8 @@ Coverage was measured with `pytest-cov`.
 
 | Measure | Black-box tests | Black-box + white-box tests |
 |---|---:|---:|
-| Tests collected | 48 | 54 |
-| Passed | 35 | 41 |
+| Tests collected | 50 | 54 |
+| Passed | 37 | 41 |
 | Failed | 13 | 13 |
 | Statements covered | 53 of 57 | 56 of 57 |
 | Statement coverage | 93.0% | 98.2% |
@@ -127,7 +127,7 @@ A proposed fix is saved in `docs/proposed_defect_fixes.patch`. It was tested in 
 
 ## 5. Test execution summary
 
-The first run used only the black-box tests. It collected 48 tests: 35 passed and 13 failed. After adding the white-box tests, the full suite collected 54 tests: 41 passed and 13 failed.
+The first run used only the black-box tests. It collected 50 tests: 37 passed and 13 failed. After adding the white-box tests, the full suite collected 54 tests: 41 passed and 13 failed.
 
 The extra white-box tests increased statement coverage from 93.0% to 98.2% and branch coverage from 80.8% to 96.2%. The failures remain because they point to defects in the original program.
 
