@@ -42,3 +42,8 @@ Do not change a test's expected result just to make it pass. If a defect is fixe
 - `tests/test_whitebox.py`: tests based on the program's code paths.
 - `docs/`: test cases, decision table, control flow graph, test report, and run results.
 - `.github/workflows/tests.yml`: runs tests automatically on GitHub.
+
+
+## Supporting files
+
+The separate project ZIP package also includes the Word SRS, Excel test-design sheets, CFG image, and PDF report. Those binary files are not included in this GitHub upload; the source code, test suites, workflow, and text reports are available in this repository.
