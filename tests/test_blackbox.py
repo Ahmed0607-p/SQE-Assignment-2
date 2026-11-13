@@ -1,8 +1,4 @@
-"""Black-box tests derived from REQUIREMENTS.md (FR-01 to FR-15).
 
-Expected results are based on the SRS, not on the implementation.
-Test IDs map to the ECP, BVA, and decision-table designs in the assignment report.
-"""
 import pytest
 
 from registration import (
@@ -32,7 +28,7 @@ def make_course(**kwargs):
 
 
 def state(student, course):
-    """Snapshot all data fields relevant to FR-10 through FR-14."""
+  
     return (
         student.student_id,
         set(student.completed_courses),
