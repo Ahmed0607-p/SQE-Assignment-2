@@ -1,0 +1,35 @@
+digraph registration_decision {
+    rankdir=TB;
+    node [shape=box];
+    start [shape=oval,label="Start"];
+    dues [shape=diamond,label="Dues < 0?"];
+    cap [shape=diamond,label="Enrollment invalid?"];
+    duesblock [shape=diamond,label="Dues > 1000?"];
+    duplicate [shape=diamond,label="Already registered?"];
+    prereq [shape=diamond,label="Prerequisites satisfied?"];
+    credits [shape=diamond,label="Credit limit valid?"];
+    full [shape=diamond,label="Enrolled > capacity?"];
+    invaliddues [label="Raise Invalid dues"];
+    invalidcap [label="Raise Invalid capacity"];
+    duesout [label="DUES_BLOCK"];
+    dupout [label="ALREADY_REGISTERED"];
+    prereqout [label="PREREQUISITES_MISSING"];
+    creditout [label="CREDIT_LIMIT"];
+    waitout [label="WAITLISTED"];
+    regout [label="REGISTERED"];
+    start -> dues;
+    dues -> invaliddues [label="Yes"];
+    dues -> cap [label="No"];
+    cap -> invalidcap [label="Yes"];
+    cap -> duesblock [label="No"];
+    duesblock -> duesout [label="Yes"];
+    duesblock -> duplicate [label="No"];
+    duplicate -> dupout [label="Yes"];
+    duplicate -> prereq [label="No"];
+    prereq -> prereqout [label="No"];
+    prereq -> credits [label="Yes"];
+    credits -> creditout [label="No"];
+    credits -> full [label="Yes"];
+    full -> waitout [label="Yes"];
+    full -> regout [label="No"];
+}
