@@ -1,8 +1,4 @@
-"""White-box tests for structural paths not fully exercised by black-box tests.
 
-These tests do not change registration.py. The WAITLISTED decision is forced
-with monkeypatch only to isolate register_course's wait-list update branch.
-"""
 import registration
 from registration import Student, Course, registration_decision, register_course
 
